@@ -69,10 +69,10 @@ if st.button('Show Recommendation'):
         st.text(f" --- RATING  =  {recommended_movie_review[4]} ---")
         
 
+
+
 st.header('You can also Review any Movies')
+
 google_form_link = "https://forms.gle/sPwZS54CnmjPM9mZA"
-if st.button('REVIEW'):
-    webbrowser.open_new_tab(google_form_link)
 
-
-    
+st.link_button("REVIEW", google_form_link)
