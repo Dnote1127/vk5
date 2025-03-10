@@ -71,8 +71,16 @@ if st.button('Show Recommendation'):
 
 
 
-st.header('You can also Review any Movies')
+st.header('You can also Rate any Movies')
 
 google_form_link = "https://forms.gle/sPwZS54CnmjPM9mZA"
+
+st.link_button("REVIEW", google_form_link)
+
+
+
+st.header('You can also Rate the latest Movies')
+
+google_form_link = "https://forms.gle/AdYdH7C9D7iGkeSR6"
 
 st.link_button("REVIEW", google_form_link)
