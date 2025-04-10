@@ -40,7 +40,6 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters,recommended_movie_review
 
 
-st.header('MOVIES RECOMMENDER AND REVIEWS')
 st.markdown("""
 <div style="text-align: center; margin-bottom: 10px;">
     <h2 style="margin-bottom: 2px;">MOVIES RECOMMENDER AND REVIEWS</h2>
