@@ -99,7 +99,7 @@ half_star = (review_score - full_stars) >= 0.25 and (review_score - full_stars) 
 empty_stars = 10 - full_stars - (1 if half_star else 0)
 
 # Star display
-stars = "★" * full_stars + "⯪" * half_star + "☆" * empty_stars
+stars = "★" * full_stars + "✭" * half_star + "☆" * empty_stars
 
 # Layout using columns
 col1, col2, col3 = st.columns([1, 2, 3])  # adjust width ratio if needed
