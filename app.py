@@ -100,6 +100,7 @@ st.link_button("REVIEW", google_form_link)
 #UPDATING
 
 st.header('THE LATEST MOVIES')
+st.markdown("<hr style='border: 1px solid gray; width: 80%; margin: auto;'>", unsafe_allow_html=True)
 
 ### MOVIE 1 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
