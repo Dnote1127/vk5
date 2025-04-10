@@ -40,12 +40,7 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters,recommended_movie_review
 
 
-st.markdown("""
-<div style="text-align: center; margin-bottom: 20px;">
-    <h2 style="margin-bottom: 5px;">MOVIES RECOMMENDER AND REVIEW</h2>
-    <hr style="border: none; height: 2px; background-color: gray; width: 100%;">
-</div>
-""", unsafe_allow_html=True)
+st.header('Movie Recommender System ')
 movies = pickle.load(open('artifacts/movie_list.pkl','rb'))
 similarity = pickle.load(open('artifacts/similarity.pkl','rb'))
 
@@ -104,13 +99,11 @@ st.link_button("REVIEW", google_form_link)
 
 #UPDATING
 
-st.markdown("""
-<div style="text-align: center; margin-bottom: 20px;">
+st.markdown("""<div style="text-align: center; margin-bottom: 20px;">
     <h2 style="margin-bottom: 5px;">THE LATEST MOVIES</h2>
     <hr style="border: none; height: 2px; background-color: gray; width: 100%;">
 </div>
 """, unsafe_allow_html=True)
-st.markdown("<hr style='border: 1px solid gray; width: 80%; margin: auto;'>", unsafe_allow_html=True)
 
 ### MOVIE 1 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
