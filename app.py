@@ -131,7 +131,7 @@ col1, col2, col3 = st.columns([1, 2, 3])  # adjust width ratio if needed
 with col3:
     st.markdown("<div style='font-size: 20px;'>     </div>", unsafe_allow_html=True)
     st.write("Rating of 65 Peoples")
-    st.markdown(f"<div style='font-size: 26px; color: gold;'>{stars}</div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='font-size: 26px; color: gold;'>{star_html}</div>", unsafe_allow_html=True)
     st.write(f"{review_score}/10")
 
 with col1:
