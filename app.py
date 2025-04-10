@@ -41,6 +41,13 @@ def recommend(movie):
 
 
 st.header('MOVIES RECOMMENDER AND REVIEW')
+st.markdown("""
+<div style="text-align: center; margin-bottom: 20px;">
+    <h2 style="margin-bottom: 5px;">MOVIES RECOMMENDER AND REVIEWS</h2>
+    <hr style="border: none; height: 2px; background-color: gray; width: 100%;">
+</div>
+""", unsafe_allow_html=True)
+
 movies = pickle.load(open('artifacts/movie_list.pkl','rb'))
 similarity = pickle.load(open('artifacts/similarity.pkl','rb'))
 
