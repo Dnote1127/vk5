@@ -99,11 +99,8 @@ st.link_button("REVIEW", google_form_link)
 
 #UPDATING
 
-st.markdown("""<div style="text-align: center; margin-bottom: 20px;">
-    <h2 style="margin-bottom: 5px;">THE LATEST MOVIES</h2>
-    <hr style="border: none; height: 2px; background-color: gray; width: 100%;">
-</div>
-""", unsafe_allow_html=True)
+st.header('THE LATEST MOVIES')
+st.markdown("<hr style='border: 1px solid gray; width: 80%; margin: auto;'>", unsafe_allow_html=True)
 
 ### MOVIE 1 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
