@@ -95,10 +95,11 @@ st.header('You can also Rate the Latest Movies')
 google_form_link = "https://forms.gle/AdYdH7C9D7iGkeSR6"
 
 st.link_button("REVIEW", google_form_link)
+st.markdown("<div style='font-size: 20px;'>     </div>", unsafe_allow_html=True)
+st.markdown("<div style='font-size: 20px;'>     </div>", unsafe_allow_html=True)
 
 
 #UPDATING
-
 st.markdown("""
 <div style="text-align: center; margin-bottom: 20px;">
     <h2 style="margin-bottom: 5px;">THE LATEST MOVIES</h2>
