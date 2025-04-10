@@ -122,15 +122,6 @@ full_stars = int(review_score)
 half_star = (review_score - full_stars) >= 0.25 and (review_score - full_stars) < 0.75
 empty_stars = 10 - full_stars - (1 if half_star else 0)
 
-# Build star string using HTML
-star_html = (
-    '<span style="color: gold; font-size: 30px;">' +
-    '★' * full_stars +
-    ('½' if half_star else '') +
-    '☆' * empty_stars +
-    '</span>'
-)
-
 # Layout using columns
 col1, col2, col3 = st.columns([1, 2, 3])  # adjust width ratio if needed
 
