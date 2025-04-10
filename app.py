@@ -4,6 +4,17 @@ import requests
 import pandas as pd
 import webbrowser
 
+# REMOVING UNWANTED THINGS
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
 
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
@@ -79,7 +90,7 @@ st.link_button("REVIEW", google_form_link)
 
 
 
-st.header('You can also Rate the latest Movies')
+st.header('You can also Rate the Latest Movies')
 
 google_form_link = "https://forms.gle/AdYdH7C9D7iGkeSR6"
 
@@ -88,7 +99,7 @@ st.link_button("REVIEW", google_form_link)
 
 #UPDATING
 
-st.header('The Latest Movies')
+st.header('THE LATEST MOVIES')
 
 ### MOVIE 1 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
